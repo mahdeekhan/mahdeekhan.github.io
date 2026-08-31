@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahdee Khan — Computer Engineer</title>
+<meta name="description" content="Mahdee Khan — computer engineering student at Stony Brook University. VLSI, microarchitecture, and verification work.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <span class="mark">M.KHAN</span>
+      <span class="tagline">vlsi · architecture · systems</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#work">work</a></li>
+      <li><a href="notes.html">notes</a></li>
+      <li><a href="cv.pdf" download>cv.pdf</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow-tags">
+          <span class="tag">vlsi</span>
+          <span class="tag">arch</span>
+          <span class="tag">systems</span>
+        </div>
+        <h1 class="headline">Processors and verification flows I build, simulate, and formally prove correct.</h1>
+        <div class="status-line">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>open to summer 2027 internships &amp; research roles</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <svg class="chip-svg" viewBox="0 0 220 160" role="img" aria-label="Chip die outline">
+          <rect x="60" y="40" width="100" height="80" fill="none" stroke="#8b7bff" stroke-width="2"/>
+          <text x="110" y="90" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="700" fill="#8b7bff">MK</text>
+          <g stroke="#8b7bff" stroke-width="2">
+            <line x1="60" y1="55" x2="44" y2="55"/>
+            <line x1="60" y1="75" x2="44" y2="75"/>
+            <line x1="60" y1="95" x2="44" y2="95"/>
+            <line x1="60" y1="115" x2="44" y2="115"/>
+            <line x1="160" y1="55" x2="176" y2="55"/>
+            <line x1="160" y1="75" x2="176" y2="75"/>
+            <line x1="160" y1="95" x2="176" y2="95"/>
+            <line x1="160" y1="115" x2="176" y2="115"/>
+            <line x1="80" y1="40" x2="80" y2="26"/>
+            <line x1="100" y1="40" x2="100" y2="26"/>
+            <line x1="120" y1="40" x2="120" y2="26"/>
+            <line x1="140" y1="40" x2="140" y2="26"/>
+            <line x1="80" y1="120" x2="80" y2="134"/>
+            <line x1="100" y1="120" x2="100" y2="134"/>
+            <line x1="120" y1="120" x2="120" y2="134"/>
+            <line x1="140" y1="120" x2="140" y2="134"/>
+          </g>
+        </svg>
+        <dl>
+          <dt>role</dt><dd>computer engineer</dd>
+          <dt>focus</dt><dd>vlsi · microarch</dd>
+          <dt>based</dt><dd>stony brook, ny</dd>
+          <dt>grad</dt><dd>2029</dd>
+        </dl>
+      </aside>
+    </div>
+  </header>
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <div class="block-head">
+        <h2 class="block-title">Selected hardware</h2>
+        <span class="block-stat">02 builds · 2026</span>
+      </div>
+      <p class="block-sub">Click any row for the write-up — approach, verification method, and result.</p>
+
+      <div class="sheet">
+        <div class="sheet-head">
+          <span>ref</span>
+          <span>project</span>
+          <span>domain</span>
+          <span>stack</span>
+          <span>year</span>
+          <span>result</span>
+        </div>
+
+        <details class="proj sheet-row">
+          <summary>
+            <span class="cell-ref">U01</span>
+            <span class="cell-project">RISC-V CPU Simulator with Verification Testbench</span>
+            <span class="cell-domain"><span class="cell-label">domain</span>cpu architecture · verification</span>
+            <span class="cell-stack"><span class="cell-label">stack</span>C, RISC-V RV32I ISA</span>
+            <span class="cell-year"><span class="cell-label">year</span>2026</span>
+            <span class="cell-result"><span class="cell-label">result</span>in progress</span>
+          </summary>
+          <div class="proj-detail">
+            <ul>
+              <li>Designing a cycle-accurate CPU simulator in C for a subset of the RISC-V RV32I instruction set, implementing fetch, decode, and execute stages with simulated registers, memory, and a program counter.</li>
+              <li>Building an automated testbench of C-based checker functions to validate CPU register and memory outputs against expected results across arithmetic, branching, and memory-access test cases, mirroring verification methodologies used in industry hardware verification workflows.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj sheet-row">
+          <summary>
+            <span class="cell-ref">U02</span>
+            <span class="cell-project">Formal Verification of a Synchronous FIFO</span>
+            <span class="cell-domain"><span class="cell-label">domain</span>formal verification · digital design</span>
+            <span class="cell-stack"><span class="cell-label">stack</span>SystemVerilog (SVA), SymbiYosys</span>
+            <span class="cell-year"><span class="cell-label">year</span>2026</span>
+            <span class="cell-result"><span class="cell-label">result</span>proofs pass</span>
+          </summary>
+          <div class="proj-detail">
+            <ul>
+              <li>Designed and simulated a parameterized synchronous FIFO in Verilog, then wrote SystemVerilog Assertions (SVA) specifying functional correctness properties including no overflow, no underflow, and preservation of data ordering.</li>
+              <li>Used SymbiYosys to run bounded model checking (BMC) and k-induction proofs verifying the FIFO satisfies all specified properties across every reachable state, and added cover properties to confirm the assertions were not vacuously true.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="sheet-eof">eof</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bench">
+    <div class="wrap">
+      <div class="block-head">
+        <h2 class="block-title">Bench</h2>
+      </div>
+      <div class="bench-box">
+        <span class="bench-label">// edit before publishing</span>
+        Add the gear you actually work with — oscilloscope, soldering station, dev boards, etc.
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="block-head">
+        <h2 class="block-title">Contact</h2>
+      </div>
+      <p class="block-sub">Reach out directly, or say hello below.</p>
+
+      <div class="contact-grid">
+        <div class="terminal">
+          <div class="term-bar">
+            <span class="term-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            mahdee@bench — contact — 82×26
+          </div>
+          <div class="term-body">
+            <div class="term-line" id="last-login">Last login on ttys002</div>
+
+            <div class="term-block">
+              <div><span class="term-prompt">~ %</span> <span class="term-cmd">whoami</span></div>
+              <div class="term-out">
+                <div class="lead">mahdee khan · computer engineer</div>
+                <div>vlsi &amp; microarchitecture · computer architecture · systems software</div>
+              </div>
+            </div>
+
+            <div class="term-block">
+              <div><span class="term-prompt">~ %</span> <span class="term-cmd">cat channels.txt</span></div>
+              <ul class="chan-list">
+                <li><span class="k">email</span><a href="mailto:mahdee.khan@stonybrook.edu">mahdee.khan@stonybrook.edu</a></li>
+                <li><span class="k">github</span><a href="https://github.com/mahdeekhan" target="_blank" rel="noopener">github.com/mahdeekhan</a></li>
+                <li><span class="k">linkedin</span><a href="https://linkedin.com/in/mahdee-khan-767467271" target="_blank" rel="noopener">linkedin.com/in/mahdee-khan</a></li>
+                <li><span class="k">location</span><span>Stony Brook, NY · UTC−05:00, replies within a day</span></li>
+              </ul>
+            </div>
+
+            <div class="term-block">
+              <div><span class="term-prompt">~ %</span> <span class="term-cmd">./say-hello --subject</span></div>
+              <div class="subject-row" id="subject-row" role="group" aria-label="Choose a subject">
+                <button type="button" class="chip-btn" data-subject="Internship opportunity" aria-pressed="false">internship opportunity</button>
+                <button type="button" class="chip-btn" data-subject="Research collaboration" aria-pressed="false">research collaboration</button>
+                <button type="button" class="chip-btn" data-subject="Feedback on a project" aria-pressed="false">feedback on a project</button>
+                <button type="button" class="chip-btn" data-subject="Just saying hi" aria-pressed="false">just saying hi</button>
+              </div>
+
+              <form class="note-form is-hidden" id="note-form">
+                <div class="field">
+                  <label for="f-name">name</label>
+                  <input id="f-name" name="name" type="text" placeholder="your name" autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="f-email">your email</label>
+                  <input id="f-email" name="email" type="email" placeholder="you@company.com" autocomplete="email">
+                </div>
+                <div class="field">
+                  <label for="f-message">message</label>
+                  <textarea id="f-message" name="message" placeholder="what are you building?"></textarea>
+                </div>
+                <div class="note-meta">no newsletter, no tracking — this just opens an email to me.</div>
+                <button type="submit" class="transmit-btn">TRANSMIT ⏎</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side-card">
+          <div>
+            <div class="side-title">status</div>
+            <div class="status-pill"><span class="status-dot" aria-hidden="true"></span>open · summer 2027 internships</div>
+          </div>
+          <div>
+            <div class="side-title">direct</div>
+            <ul class="direct-list">
+              <li><span class="k">email</span><a href="mailto:mahdee.khan@stonybrook.edu">mahdee.khan@stonybrook.edu</a></li>
+              <li><span class="k">phone</span><a href="tel:+19298557114">929-855-7114</a></li>
+              <li><span class="k">github</span><a href="https://github.com/mahdeekhan" target="_blank" rel="noopener">github.com/mahdeekhan</a></li>
+              <li><span class="k">résumé</span><a href="cv.pdf" download>download cv.pdf</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Mahdee Khan</span>
+  <span>rev 1.0 · sheet 01/01</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
