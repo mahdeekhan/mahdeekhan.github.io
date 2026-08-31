@@ -213,7 +213,32 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
 }
 
-.hero-panel .chip-svg { width: 100%; height: auto; display: block; margin-bottom: 14px; }
+.chip-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 14px;
+}
+
+.chip-pins {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.chip-photo-img {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+  display: block;
+  filter: saturate(0.92) contrast(1.02);
+}
 
 .hero-panel dl {
   display: grid;
